@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400&display=swap');
 
 // Font
-$mainFont: '';
+@font-face {
+    font-family: 'BorisBlackBloxx';
+    src: url('../../fonts/BorisBlackBloxx.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+    font-family: 'Cocogoose Pro-trial';
+    src: url('../../fonts/Cocogoose Pro-trial.ttf'); /* IE9 Compat Modes */
+}
+
+$kickerFont: 'BorisBlackBloxx';
+$mainFont: 'Cocogoose Pro-trial';
 
 // Colors 
-$white: #FFFFFF;
+$primaryColor: #242321;
+$secondaryColor: #FFFFFF;
 
 //Mixins
 @mixin display-flex-column {

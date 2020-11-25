@@ -16,7 +16,7 @@ const MainPage = () => {
                 <h1 className="kicker__title">
                     <FormattedMessage id="home.HeroTitle" />
                 </h1>
-                <h1  className="kicker__company-name">PontyBike</h1>
+                <h1  className="kicker__company-name">Ponty Bike</h1>
             </div>
         </section>
     )

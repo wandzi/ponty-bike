@@ -1,0 +1,218 @@
+@import "../../styles/variables.scss";
+
+nav {
+    width: 100vw;
+    height: 100%;
+    .navTrigger {
+      cursor: pointer;
+      width: 30px; 
+      height: 25px;
+      margin: auto;
+      position: absolute;
+      right: 20px;
+      top: 25px;
+      z-index: 10;
+      i {
+        background-color: $secondaryColor;
+        border-radius: 2px;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+      }
+      i:nth-child(1) {
+        -webkit-animation:outT 0.8s backwards;
+        animation:outT 0.8s backwards;
+        -webkit-animation-direction:reverse;
+        animation-direction:reverse;
+      }
+      i:nth-child(2) {
+        width: 100%;
+        margin: 5px 0;
+        color: $primaryColor;
+        -webkit-animation:outM 0.8s backwards;
+        animation:outM 0.8s backwards;
+        -webkit-animation-direction:reverse;
+        animation-direction:reverse;
+      }
+      i:nth-child(3) {
+        -webkit-animation:outBtm 0.8s backwards;
+        animation:outBtm 0.8s backwards;
+        -webkit-animation-direction:reverse;
+        animation-direction:reverse;
+      }
+      &.active {
+        i:nth-child(1) {
+          -webkit-animation:inT 0.8s forwards;
+          animation:inT 0.8s forwards;
+        }
+        i:nth-child(2) {
+          -webkit-animation:inM 0.8s forwards;
+          animation:inM 0.8s forwards;
+        }
+        i:nth-child(3) {
+          -webkit-animation:inBtm 0.8s forwards;
+          animation:inBtm 0.8s forwards;
+        }
+      }
+    }
+}
+    
+   
+a {
+    font-weight: 600;
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $secondaryColor;
+}
+
+  /* Overlay Nav */
+  
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background: hsla(0, 0%, 0%, 0.960);
+  overflow-y: hidden;
+  transition: 1s;
+}
+.overlay-content {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.overlay-content > a {
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 1.5rem;
+  font-family: $mainFont;
+}
+.overlay-content__menu-item--last{
+  margin-bottom: 40px;
+}
+.overlay-content__logo {
+  width: 200px;
+  margin-top: -190px;
+  margin-bottom: -200px;
+}
+.overlay-content__socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 30px;
+}
+.menu-item {
+  margin-right: 5px;
+  font-size: 2rem;
+}
+.overlay a {
+  padding: 12px 30px;
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: $secondaryColor;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: $secondaryColor;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 40px;
+  cursor: pointer;
+  color: $primaryColor;
+}
+
+/* ANIMATION */
+    
+
+@-webkit-keyframes inM{
+    50%{-webkit-transform:rotate(0deg);}
+    100%{-webkit-transform:rotate(45deg);}
+    }
+    @keyframes inM{
+    50%{transform:rotate(0deg);
+        width: 65%;}
+    100%{transform:rotate(45deg);
+        width: 100%;}
+    }
+    
+    @-webkit-keyframes outM{
+    50%{-webkit-transform:rotate(0deg);}
+    100%{-webkit-transform:rotate(45deg);}
+    }
+    @keyframes outM{
+    50%{transform:rotate(0deg); color: $secondaryColor;}
+    100%{transform:rotate(45deg); color: $secondaryColor;}
+    }
+    
+    @-webkit-keyframes inT{
+    0%{-webkit-transform: translateY(0px) rotate(0deg);}
+    50%{-webkit-transform: translateY(9px) rotate(0deg);}
+    100%{-webkit-transform: translateY(9px) rotate(135deg);}
+    }
+    @keyframes inT{
+    0%{transform: translateY(0px) rotate(0deg);}
+    50%{transform: translateY(9px) rotate(0deg);}
+    100%{transform: translateY(9px) rotate(135deg);}
+    }
+    
+    @-webkit-keyframes outT{
+    0%{-webkit-transform: translateY(0px) rotate(0deg);}
+    50%{-webkit-transform: translateY(9px) rotate(0deg);}
+    100%{-webkit-transform: translateY(9px) rotate(135deg);}
+    }
+    @keyframes outT{
+    0%{transform: translateY(0px) rotate(0deg);}
+    50%{transform: translateY(9px) rotate(0deg);}
+    100%{transform: translateY(9px) rotate(135deg);}
+    }
+    
+    @-webkit-keyframes inBtm{
+    0%{-webkit-transform: translateY(0px) rotate(0deg);}
+    50%{-webkit-transform: translateY(-9px) rotate(0deg);}
+    100%{-webkit-transform: translateY(-9px) rotate(135deg);}
+    }
+    @keyframes inBtm{
+    0%{transform: translateY(0px) rotate(0deg);}
+    50%{transform: translateY(-9px) rotate(0deg);}
+    100%{transform: translateY(-9px) rotate(135deg);}
+    }
+    
+    @-webkit-keyframes outBtm{
+    0%{-webkit-transform: translateY(0px) rotate(0deg);}
+    50%{-webkit-transform: translateY(-9px) rotate(0deg);}
+    100%{-webkit-transform: translateY(-9px) rotate(135deg);}
+    }
+    @keyframes outBtm{
+    0%{transform: translateY(0px) rotate(0deg);}
+    50%{transform: translateY(-9px) rotate(0deg);}
+    100%{transform: translateY(-9px) rotate(135deg);}
+    }
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}

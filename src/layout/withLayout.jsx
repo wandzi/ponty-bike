@@ -10,7 +10,7 @@ import enData from 'react-intl/locale-data/en';
 import deData from 'react-intl/locale-data/de';
 import { translations, languages } from '../i18n';
 
-import Header from '../components/Header';
+import Header from '../components/Header/Header';
 import SEO from '../components/SEO';
 import './layout.css';
 
@@ -25,7 +25,6 @@ const withLayout = customProps => PageComponent => props => {
   const defaultLocale = languages.find(language => language.default).locale;
   const pageLocale = locale || defaultLocale;
   const pageTitle = locale ? translations[locale][`${localeKey}.title`] : '';
-
   return (
     <StaticQuery
       query={graphql`

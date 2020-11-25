@@ -2,23 +2,16 @@ import React, { useContext } from 'react';
 import { navigate } from 'gatsby';
 import { injectIntl } from 'react-intl';
 
-import languages from '../i18n/languages';
-import PageContext from '../layout/PageContext';
+import languages from '../../i18n/languages';
+import PageContext from '../../layout/PageContext';
 
-const buttonStyle = {
-  margin: '0.5rem',
-  borderRadius: '10px',
-  border: 0,
-  cursor: 'pointer',
-};
+import './langs.scss'
 
 const LangButton = ({ label, chosen, onClick }) => (
   <button
     onClick={onClick}
-    style={{
-      background: chosen ? '#FFAF1E' : 'white',
-      ...buttonStyle,
-    }}
+    className="lang-button"
+    style={{color: chosen ? '#FFAF1E' : 'white'}}
   >
     {label}
   </button>

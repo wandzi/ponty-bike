@@ -34,8 +34,16 @@
     width: 50%;
 }
 .kicker__title {
-    color: $white;
+    color: $secondaryColor;
+    font-family: $kickerFont;
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 .kicker__company-name {
-    color: $white;
+    color: $secondaryColor;
+    font-family: $kickerFont;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
