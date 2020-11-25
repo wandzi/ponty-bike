@@ -3,11 +3,18 @@ import PropTypes from 'prop-types';
 import Link from '../Link';
 import Langs from '../Langs';
 
-const Header = ({ siteTitle, hideLangs }) => (
+import './Header.scss'
+
+import NavLogo from '../../images/nav-logo.svg'
+
+const Header = ({ hideLangs }) => (
   <header
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      background: `black`,
+      position: `fixed`,
+      top: `0`,
+      zIndex: `5`,
+      width: '100%'
     }}
   >
     <div
@@ -18,19 +25,10 @@ const Header = ({ siteTitle, hideLangs }) => (
         display: 'flex',
         justifyContent: 'space-between',
         flexWrap: 'wrap',
+
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      <NavLogo className="nav__logo"/>
       {!hideLangs && <Langs />}
     </div>
   </header>

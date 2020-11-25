@@ -6,7 +6,6 @@ const Redirect = ({ navigate, pageContext: { redirectPage } }) => {
   useEffect(() => {
     const detected = detectLocale();
     const newUrl = `/${detected}${redirectPage}`;
-
     localStorage.setItem('language', detected);
     navigate(newUrl);
   }, []);

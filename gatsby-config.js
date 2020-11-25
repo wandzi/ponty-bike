@@ -1,18 +1,27 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Intl`,
-    description: `Kick off your next, great Gatsby project with this i18n starter. This barebones starter ships with the main Gatsby configuration files you might need... and i18n too!`,
-    author: `@gatsbyjs, @tomekskuta`,
+    title: `PontyBike`,
+    description: `PontyBike's website.`,
+    author: `@gatsbyjs, @tomekskuta, @mateuszwandzel`,
     keywords: [`gatsby`, `application`, `react`],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /images/
+        },
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

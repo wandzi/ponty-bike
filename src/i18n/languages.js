@@ -1,11 +1,15 @@
 module.exports = [
   {
     locale: 'pl',
-    label: 'Polski',
+    label: 'PL',
   },
   {
     locale: 'en',
-    label: 'English',
+    label: 'EN',
     default: true,
+  },
+  {
+    locale: 'de',
+    label: 'DE',
   },
 ];
