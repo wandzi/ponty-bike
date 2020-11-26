@@ -1,6 +1,6 @@
 export default {
   title: 'Models',
-  'Hi from the second page': 'Hi from the second page',
-  'Welcome to page 2': 'Welcome to page 2',
-  'Go back to the homepage': 'Go back to the homepage',
+  'asd': 'hihi',
+  'Welcome to page 2': 'Deutche',
+  'Go back to the homepage': 'Deutche',
 };
