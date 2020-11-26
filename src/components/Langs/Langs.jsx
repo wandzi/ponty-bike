@@ -11,7 +11,7 @@ const LangButton = ({ label, chosen, onClick }) => (
   <button
     onClick={onClick}
     className="lang-button"
-    style={{color: chosen ? '#FFAF1E' : 'white'}}
+    style={{color: chosen ? '#FFAF1E' : '#FFFFFF'}}
   >
     {label}
   </button>

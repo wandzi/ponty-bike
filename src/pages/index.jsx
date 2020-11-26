@@ -5,25 +5,15 @@ import withLayout from '../layout';
 import Link from '../components/Link';
 
 import MainPage from '../components/MainPage/MainPage';
+import AboutUs from '../components/AboutUs/AboutUs';
 
 const IndexPage = () => (
   <>
 
     <MainPage />
+    <AboutUs />
 
-    <h1>
-      <FormattedMessage id="home.Kicker" />
-    </h1>
-    <p>
-      <FormattedMessage id="home.Welcome to your new Gatsby site" />
-    </p>
-    <p>
-      <FormattedMessage id="home.Now go build something great" />
-    </p>
-
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-
-    </div>
+    
     <Link to="/page-2/">
       <FormattedMessage id="home.Go to page 2" />
     </Link>
