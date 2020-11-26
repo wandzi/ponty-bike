@@ -36,12 +36,12 @@ const Nav = (props) => {
             <div id="myNav" className="overlay" style={isOpened}>
                 <div className="overlay-content">
                     <HeaderLogo className="overlay-content__logo"/>
-                    <Link to="/o-mnie" className="overlay-content__menu-item">O Nas</Link> 
-                    <Link to="/FAQ" className="overlay-content__menu-item">Modele</Link>
-                    <Link to="/oferta" className="overlay-content__menu-item">Galeria</Link>
-                    <Link to="/kontakt" className="overlay-content__menu-item">Usługi</Link>
-                    <Link to="/blog" className="overlay-content__menu-item">Sklep</Link>
-                    <Link to="/blog" className="overlay-content__menu-item overlay-content__menu-item--last">Kontakt</Link>
+                    <Link to="/" className="overlay-content__menu-item">O Nas</Link> 
+                    <Link to="/Models/" className="overlay-content__menu-item">Modele</Link>
+                    <Link to="/" className="overlay-content__menu-item">Galeria</Link>
+                    <Link to="/" className="overlay-content__menu-item">Usługi</Link>
+                    <Link to="/" className="overlay-content__menu-item">Sklep</Link>
+                    <Link to="/" className="overlay-content__menu-item overlay-content__menu-item--last">Kontakt</Link>
                     <div className="overlay-content__socials">
                         <SocialMedia />
                         {!showLangs && <Langs />}

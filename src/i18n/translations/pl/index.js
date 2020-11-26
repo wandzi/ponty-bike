@@ -2,8 +2,8 @@ import flatten from 'flat';
 
 import error404 from './404';
 import home from './home';
-import page2 from './page-2';
+import Models from './models';
 
-const message = { error404, home, page2 };
+const messages = { home, Models, error404 };
 
-export default flatten(message);
+export default flatten(messages);

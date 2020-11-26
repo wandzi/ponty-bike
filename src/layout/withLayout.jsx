@@ -12,6 +12,7 @@ import { translations, languages } from '../i18n';
 
 import Header from '../components/Header/Header';
 import SEO from '../components/SEO';
+import Footer from '../components/Footer/Footer';
 import './layout.css';
 
 addLocaleData([...plData, ...enData, ...deData]);
@@ -44,6 +45,7 @@ const withLayout = customProps => PageComponent => props => {
               <main>
                 <PageComponent {...props} />
               </main>
+            <Footer />
           </PageContext.Provider>
         </IntlProvider>
       )}
