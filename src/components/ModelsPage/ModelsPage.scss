@@ -6,14 +6,16 @@
 }
 .heading-container {
     background-color: $secondaryColor;
-    width: 50%;
+    width: 60%;
     margin-top: 73px;
-    padding: 10px;
+    padding: 13px;
     clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
 }
 .heading-container__title {
     color: $primaryColor;
     margin: 0;
+    font-size: 1.8rem;
+    font-family: $mainFont;
 }
 .model-section__bike-container {
     @include display-flex-column;
@@ -28,9 +30,9 @@
 }
 .bike-container__name {
     margin-top: 0px;
-    font-family: $mainFont;
-    
     margin-bottom: 40px;
+    font-family: $mainFont;
+    text-align: center;
 }
 .bike-container__specification {
     padding: 15px;

@@ -1,0 +1,9 @@
+@import "../../styles/variables.scss";
+
+.gallery-section {
+    @include display-flex-column;
+    width: 100%;
+}
+.gallery-section__photo {
+    height: 50%;
+}

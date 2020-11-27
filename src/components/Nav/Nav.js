@@ -38,7 +38,7 @@ const Nav = (props) => {
                     <HeaderLogo className="overlay-content__logo"/>
                     <Link to="/" className="overlay-content__menu-item">O Nas</Link> 
                     <Link to="/models/" className="overlay-content__menu-item">Modele</Link>
-                    <Link to="/" className="overlay-content__menu-item">Galeria</Link>
+                    <Link to="/gallery/" className="overlay-content__menu-item">Galeria</Link>
                     <Link to="/" className="overlay-content__menu-item">Usługi</Link>
                     <Link to="/" className="overlay-content__menu-item">Sklep</Link>
                     <Link to="/" className="overlay-content__menu-item overlay-content__menu-item--last">Kontakt</Link>
