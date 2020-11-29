@@ -1,0 +1,48 @@
+@import "../../styles/variables.scss";
+
+.services-section {
+    @include display-flex-column;
+    margin: 0;
+    padding-top: 90px;
+}
+.services-section_list-container {
+    width: 90%;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    border-left: 3px solid $secondaryColor;
+}
+.services-section__heading {
+    margin-left: 20px;
+    color: $secondaryColor;
+    font-family: $mainFont;
+}
+.services-section__services-list {
+    width: 90%;
+    list-style-type: none;
+}
+.bike-container__specification {
+    padding: 15px;
+    width: 100%;
+    margin: 0;
+    font-family: $mainFont;
+}
+.specification_detail {
+    @include display-flex-row;
+    justify-content: unset;
+}
+.detail__arrow {
+    margin-right: 30px;
+    width: 30px;
+}
+.detail__title {
+    margin: 0;
+    color: $secondaryColor;
+    font-family: $mainFont;
+}
+.services-section__services-description {
+    width: 90%;
+    margin-top: 40px;
+    color: $secondaryColor;
+    text-align: left;
+    font-family: $mainFont;
+}

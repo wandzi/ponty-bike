@@ -11,7 +11,7 @@ const Nav = (props) => {
     const showLangs = props.showLangs;
 
     const [menuActive, setMenuState] = useState(false);
-    let isActive, isOpened, isColored;
+    let isActive, isOpened;
 
     const handleClick = () => {
         setMenuState((prevMenuActive) => !prevMenuActive)
@@ -23,15 +23,14 @@ const Nav = (props) => {
     } else {
         isActive = 'navTrigger active'
         isOpened = {height:'100%'}
-        isColored = {backgroundColor: '#FFFFFF'}
     }
     
     return (
         <nav className="nav">
             <div className={isActive} role="button" onClick={handleClick} onKeyDown={handleClick}>
-                <i style={isColored}></i>
-                <i style={isColored}></i>
-                <i style={isColored}></i>
+                <i></i>
+                <i></i>
+                <i></i>
             </div>
             <div id="myNav" className="overlay" style={isOpened}>
                 <div className="overlay-content">
@@ -39,9 +38,9 @@ const Nav = (props) => {
                     <Link to="/" className="overlay-content__menu-item">O Nas</Link> 
                     <Link to="/models/" className="overlay-content__menu-item">Modele</Link>
                     <Link to="/gallery/" className="overlay-content__menu-item">Galeria</Link>
-                    <Link to="/" className="overlay-content__menu-item">Usługi</Link>
-                    <Link to="/" className="overlay-content__menu-item">Sklep</Link>
-                    <Link to="/" className="overlay-content__menu-item overlay-content__menu-item--last">Kontakt</Link>
+                    <Link to="/services/" className="overlay-content__menu-item">Usługi</Link>
+                    <Link to="/shop/" className="overlay-content__menu-item">Sklep</Link>
+                    <Link to="/contact/" className="overlay-content__menu-item overlay-content__menu-item--last">Kontakt</Link>
                     <div className="overlay-content__socials">
                         <SocialMedia />
                         {!showLangs && <Langs />}
