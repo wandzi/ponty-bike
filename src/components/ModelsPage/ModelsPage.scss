@@ -26,6 +26,7 @@
     width: 80%;
 }
 .bike-container__table {
+    @include display-flex-column;
     margin-bottom: 30px;
 }
 .bike-container__name {
@@ -33,6 +34,12 @@
     margin-bottom: 40px;
     font-family: $mainFont;
     text-align: center;
+}
+.bike-container__description {
+    width: 90%;
+    margin-bottom: 30px;
+    text-align: justify;
+    font-family: $mainFont;
 }
 .bike-container__specification {
     padding: 15px;

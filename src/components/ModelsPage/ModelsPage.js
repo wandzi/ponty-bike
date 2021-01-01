@@ -15,6 +15,13 @@ const ModelsPage = () => {
                 <PerformanceBike className="bike-container__photo"/>
                 <div className="bike-container__table">
                     <h1 className="bike-container__name">Performance</h1>
+                    <p className="bike-container__description"><FormattedMessage id="Models.performance desc"/></p>
+                    <div className="bike-container__specification">
+                        <div className="specification_detail">
+                            <Arrow className="detail__arrow"/>
+                            <h3 className="detail__title">Rama</h3>
+                        </div>
+                    </div>
                     <div className="bike-container__specification">
                         <div className="specification_detail">
                             <Arrow className="detail__arrow"/>
@@ -52,6 +59,12 @@ const ModelsPage = () => {
                 <LongRangeBike className="bike-container__photo"/>
                 <div className="bike-container__table">
                     <h1 className="bike-container__name">Long Range</h1>
+                    <div className="bike-container__specification">
+                        <div className="specification_detail">
+                            <Arrow className="detail__arrow"/>
+                            <h3 className="detail__title">Rama</h3>
+                        </div>
+                    </div>
                     <div className="bike-container__specification">
                         <div className="specification_detail">
                             <Arrow className="detail__arrow"/>

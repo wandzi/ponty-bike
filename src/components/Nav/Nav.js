@@ -34,7 +34,9 @@ const Nav = (props) => {
             </div>
             <div id="myNav" className="overlay" style={isOpened}>
                 <div className="overlay-content">
-                    <HeaderLogo className="overlay-content__logo"/>
+                    <Link to="/">
+                        <HeaderLogo className="overlay-content__logo"/>
+                    </Link>
                     <Link to="/" className="overlay-content__menu-item">O Nas</Link> 
                     <Link to="/models/" className="overlay-content__menu-item">Modele</Link>
                     <Link to="/gallery/" className="overlay-content__menu-item">Galeria</Link>
