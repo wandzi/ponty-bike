@@ -2,6 +2,7 @@
 
 .contact-section {
     @include display-flex-column;
+    height: 100vh;
 }
 .contact-section__logo {
     width: 200px;
@@ -33,12 +34,6 @@
     margin-bottom: 60px;
     background: $secondaryColor;
 }
-.contact-section__allegro-description {
-    width: 90%;
-    margin-top: 70px;
+.contact-section__allegro-logo {
     margin-bottom: 70px;
-    color: $secondaryColor;
-    font-size: 1rem;
-    font-family: $mainFont;
-    font-weight: 100;
 }

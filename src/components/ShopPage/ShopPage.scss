@@ -1,0 +1,12 @@
+@import "../../styles/variables.scss";
+
+.shop-section {
+    @include display-flex-column;
+    height: 100vh;
+}
+.shop-section__kicker {
+    width: 90%;
+    text-align: center;
+    color: $secondaryColor;
+    font-size: 1.1rem;
+}

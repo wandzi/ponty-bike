@@ -12,7 +12,6 @@ const MainPage = () => {
             <HeaderBike className="top__header-bike"/>
             <div className="top__header-kicker-container"> 
                 <HeaderLogo className="kicker-containe__header-logo"/>
-                <h1 className="kicker__company-name">Ponty Bike</h1>
             </div>
         </section>
     )

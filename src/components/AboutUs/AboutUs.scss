@@ -45,3 +45,32 @@
     width: 90%;
     text-align: right;
 }
+
+@media screen and (min-width: 485px) {
+    .gallery__first-bike {
+        height: 340px;
+    }
+    .gallery__second-bike, .gallery__third-bike{
+        height: 160px;
+    }
+    .gallery__container {
+        margin-right: 20px;
+    }
+}
+@media screen and (min-width: 626px) {
+    .gallery__container {
+        margin-right: 40px;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .gallery__first-bike {
+        height: 475px;
+    }
+    .gallery__second-bike, .gallery__third-bike{
+        height: 270px;
+    }
+    .gallery__container {
+        margin-right: 80px;
+    }
+}

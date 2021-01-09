@@ -41,7 +41,7 @@ const Nav = (props) => {
                     <Link to="/models/" className="overlay-content__menu-item">Modele</Link>
                     <Link to="/gallery/" className="overlay-content__menu-item">Galeria</Link>
                     <Link to="/services/" className="overlay-content__menu-item">Usługi</Link>
-                    <Link to="/shop/" className="overlay-content__menu-item">Sklep</Link>
+                    <Link to="/shop" target="_blank" className="overlay-content__menu-item">Sklep</Link>
                     <Link to="/contact/" className="overlay-content__menu-item overlay-content__menu-item--last">Kontakt</Link>
                     <div className="overlay-content__socials">
                         <SocialMedia />

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import ContactLogo from '../../images/nav-logo.svg'
-import AllegroLogo from '../../images/contact/allegro.svg'
+import AllegroLogo from '../../images/socials/allegro.svg'
 
 import './ContactPage.scss';
 
@@ -16,12 +16,9 @@ const ContactPage = () => {
                 </address>
             </div>
             <hr className="contact-section__horizontal-line"/>
-            <a href="">
+            <a href="https://allegro.pl/uzytkownik/Sklep_Pontybike" target="_blank" className="contact-section__allegro-logo">
                 <AllegroLogo />
             </a>
-            <p className="contact-section__allegro-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
         </section>
     )
 }

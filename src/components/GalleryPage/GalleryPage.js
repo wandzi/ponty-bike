@@ -3,6 +3,9 @@ import FirstBike from '../../images/gallery/galleryphoto1.svg';
 import SecondBike from '../../images/gallery/galleryphoto2.svg';
 import ThirdBike from '../../images/gallery/galleryphoto3.svg';
 import FourthBike from '../../images/gallery/galleryphoto4.svg';
+import FivethBike from '../../images/aboutUs/bike1.svg'
+import SixthBike from '../../images/aboutUs/bike2.svg'
+import SeventhBike from '../../images/aboutUs/bike3.svg'
 
 import './GalleryPage.scss'
 
@@ -11,8 +14,11 @@ const GalleryPage = () => {
         <section className="gallery-section">
             <FirstBike className="gallery-section__photo"/>
             <SecondBike className="gallery-section__photo"/>
-            <ThirdBike className="gallery-section__photo"/>
             <FourthBike className="gallery-section__photo"/>
+            <ThirdBike className="gallery-section__photo"/>
+            <FivethBike className="gallery-section__photo"/>
+            <SixthBike className="gallery-section__photo"/>
+            <SeventhBike className="gallery-section__photo"/>
         </section>
     )
 };

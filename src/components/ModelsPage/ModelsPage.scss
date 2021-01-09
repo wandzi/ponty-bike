@@ -28,6 +28,7 @@
 .bike-container__table {
     @include display-flex-column;
     margin-bottom: 30px;
+    width: 100%;
 }
 .bike-container__name {
     margin-top: 0px;
@@ -36,7 +37,7 @@
     text-align: center;
 }
 .bike-container__description {
-    width: 90%;
+    width: 70%;
     margin-bottom: 30px;
     text-align: justify;
     font-family: $mainFont;
@@ -44,19 +45,64 @@
 .bike-container__specification {
     padding: 15px;
     width: 100%;
-    margin: 0;
     background-color: $thirdaryColor;
     font-family: $mainFont;
 }
 .specification_detail {
     @include display-flex-row;
     justify-content: unset;
+    padding-left: 20px;
+    cursor: pointer;
 }
-.detail__arrow {
-    margin-right: 30px;
-    width: 40px;
+.detail__container {
+    width: 90%;
 }
 .detail__title {
     margin: 0;
     font-family: $mainFont;
+}
+.Collapsible {
+    width: 100%;
+}
+.Collapsible__contentOuter {
+    width: 100%;
+}
+.Collapsible__contentInner {
+    margin-top: 20px;
+    padding:0;
+    width: 80%;
+}
+@media screen and (min-width: 450px) {
+    .heading-container {
+        width: 40%;
+    }
+}
+@media screen and (min-width: 700px) {
+    .heading-container {
+        width: 30%;
+    }
+    .bike-container__photo {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 900px) {
+    .heading-container {
+        width: 25%;
+    }
+    .bike-container__photo {
+        width: 40%;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .heading-container {
+        width: 20%;
+    }
+    .bike-container__photo {
+        width: 30%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .heading-container {
+        width: 15%;
+    }
 }
