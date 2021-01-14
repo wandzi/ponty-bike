@@ -8,21 +8,9 @@
 .about-us__gallery {
     @include display-flex-row;
     width: 90%;
-    margin-left: 20px;
 }
-.gallery__container {
-    @include display-flex-column;
+.about-us__gallery-image {
     height: 100%;
-    align-items: flex-end;
-}
-.gallery__first-bike {
-    height: 240px;
-}
-.gallery__second-bike {
-    margin-bottom: 19px;
-}
-.gallery__second-bike, .gallery__third-bike{
-    height: 110px;
 }
 .about-us__description {
     @include display-flex-column;

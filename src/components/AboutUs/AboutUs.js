@@ -1,9 +1,7 @@
 import React from "react"
 import { FormattedMessage } from 'react-intl';
 
-import FirstBike from '../../images/aboutUs/bike1.svg'
-import SecondBike from '../../images/aboutUs/bike2.svg'
-import ThirdBike from '../../images/aboutUs/bike3.svg'
+import PhotoGallery from '../../images/aboutUs/aboutus_image.svg'
 
 import './AboutUs.scss';
 
@@ -11,11 +9,7 @@ const AboutUs = () => {
     return (
         <section className="about-us">
             <div className="about-us__gallery">
-                <FirstBike className="gallery__first-bike"/>
-                <div className="gallery__container">
-                    <SecondBike className="gallery__second-bike"/>
-                    <ThirdBike className="gallery__third-bike"/>
-                </div>
+                <PhotoGallery className="about-us__gallery-image" />
             </div>
             <div className="about-us__description">
                 <h1 className="description__title">
@@ -31,4 +25,4 @@ const AboutUs = () => {
 
 
   
-  export default AboutUs;
+  export default AboutUs
