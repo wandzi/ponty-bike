@@ -20,6 +20,7 @@
 .services-section__services-list {
     width: 90%;
     list-style-type: none;
+    cursor: default;
 }
 .specification_detail {
     @include display-flex-row;
