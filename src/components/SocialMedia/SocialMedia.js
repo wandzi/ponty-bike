@@ -8,13 +8,13 @@ import YT from '../../images/socials/yt.svg'
 const SocialMedia = () => {
     return (
         <div className="social-container">
-            <a href="FB" target="_blank" rel="noopener noreferrer" className="social-container__link">
+            <a href="https://www.facebook.com/PontyBike" target="_blank" rel="noopener noreferrer" className="social-container__link">
                 <FB className="social-container__icon"/>
             </a>
-            <a href="INSTA" target="_blank" rel="noopener noreferrer" className="social-container__link">
+            <a href="https://www.instagram.com/pontybike/" target="_blank" rel="noopener noreferrer" className="social-container__link">
                 <IG className="social-container__icon"/>
             </a>
-            <a href="YOUTUBE" target="_blank" rel="noopener noreferrer" className="social-container__link">
+            <a href="https://www.youtube.com/channel/UCBb2Mzo6yjbloD_y075Bz0g" target="_blank" rel="noopener noreferrer" className="social-container__link">
                 <YT className="social-container__icon"/>
             </a>
         </div>

@@ -13,17 +13,17 @@ const ServicesPage = () => {
                 <ul className="services-section__services-list">
                     <li className="specification-container__specification">
                         <div className="specification_detail">
-                            <h3 className="detail__title"><FormattedMessage id="Models.services printing"/></h3>
+                            <h3 className="detail__title"><Arrow className="arrow"/><FormattedMessage id="Models.services printing"/></h3>
                         </div>
                     </li>
                     <li className="specification-container__specification">
                         <div className="specification_detail">
-                            <h3 className="detail__title"><FormattedMessage id="Models.services projecting"/></h3>
+                            <h3 className="detail__title"><Arrow className="arrow"/><FormattedMessage id="Models.services projecting"/></h3>
                         </div>
                     </li>
                     <li className="specification-container__specification">
                         <div className="specification_detail">
-                            <h3 className="detail__title"><FormattedMessage id="Models.services prototype"/></h3>
+                            <h3 className="detail__title"><Arrow className="arrow"/><FormattedMessage id="Models.services prototype"/></h3>
                         </div>
                     </li>
                 </ul>

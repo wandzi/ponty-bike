@@ -57,8 +57,59 @@ nav {
       }
     }
 }
-    
-   
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+button {
+  padding: 0;
+}
+.dropbtn {
+  height: 100%;
+}
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  margin-right: 20px;
+  background-color: #1b1a19;
+  vertical-align: middle;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+.nav__fullwidth {
+  display: none;
+  font-family: $mainFont;
+}
 a {
     font-weight: 600;
     font-size: 0.7rem;
@@ -96,16 +147,22 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: $mainFont;
 }
+.overlay-content__menu-item--almost-last{
+  margin-right: 20px;
+}
 .overlay-content__menu-item--last{
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .overlay-content__logo {
-  width: 200px;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  width: 140px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.nav__fullwidth__menu-item--expand {
+  margin-right: 0 !important;
 }
 .overlay-content__socials {
   display: flex;
@@ -117,12 +174,13 @@ a {
 }
 .menu-item {
   margin-right: 5px;
-  font-size: 2rem;
+  font-size: 1.4rem;
+  width: 100%;
 }
 .overlay a {
-  padding: 12px 30px;
+  padding: 12px 15px;
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   color: $secondaryColor;
   transition: 0.3s;
 }
@@ -214,5 +272,41 @@ a {
   font-size: 40px;
   top: 15px;
   right: 35px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .nav__fullwidth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+  .navTrigger {
+    display: none;
+  }
+  nav {
+    display: flex !important;
+
+    width: 700px;
+  }
+  .overlay-content {
+    display: none;
+  }
+  .nav__fullwidth__menu-item {
+    margin-right: 20px;
+  }
+  .overlay-content__socials {
+    display: block;
+    width: auto;
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .overlay-content__menu-item {
+    font-size: 0.8rem;
+  }
+  .overlay-content__socials {
+    margin-left: 40px;
+    padding: 0;
   }
 }

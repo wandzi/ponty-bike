@@ -8,7 +8,6 @@ import './MainPage.scss';
 const MainPage = () => {
     return (
         <section className="top">
-            <div className="top__filter"></div>
             <HeaderBike className="top__header-bike"/>
             <div className="top__header-kicker-container"> 
                 <HeaderLogo className="kicker-containe__header-logo"/>

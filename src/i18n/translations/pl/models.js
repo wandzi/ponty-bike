@@ -25,7 +25,7 @@ export default {
   'services heading': 'Usługi',
   'services heading': 'Usługi',
   'services printing': 'Usługa Druku 3D',
-  'services projecting': 'Projektowanie',
+  'services projecting': 'Projektowanie inżynierskie',
   'services prototype': 'Prototypowanie',
-  'services description': 'PontyBike, to nie tylko rowery elektryczne. Dysponujemy przemysłowymi maszynami, do druku w technologii FDM, MJP, SLA. Oferujemy Państwu również usługi projektowania CAD oraz zajmujemy się prototypowaniem części.',
+  'services description': 'PontyBike, to nie tylko rowery elektryczne. Dysponujemy przemysłowymi maszynami, do druku w technologii FDM, SLA. Oferujemy Państwu również usługi projektowania CAD oraz zajmujemy się prototypowaniem części.',
 };

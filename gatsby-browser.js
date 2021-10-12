@@ -1,5 +1,4 @@
-exports.onInitialClientRender = () => {
-  window.addEventListener('popstate', () =>
-    window.location.href = window.location.href
-  )
+export const onRouteUpdate = ({ location, prevLocation }) => {
+  if (location && location.state)
+    location.state.referrer = prevLocation ? prevLocation.pathname : null
 }
